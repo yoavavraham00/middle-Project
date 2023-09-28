@@ -1,0 +1,68 @@
+.cards-page {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative; /* Add this to position child elements */
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin-top: 10px;
+}
+
+.action-icon1 {
+  justify-content: space-between;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  position: absolute;
+  right: 30px;  
+  color: #e01515;
+}
+
+/* Style for the icons */
+.action-icon2 {
+  justify-content: space-between;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  position: absolute;
+  right: 60px;  
+  color: rgb(21, 167, 77);
+}
+
+.action-icon3 {
+  justify-content: space-between;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  position: absolute;
+  left: 60px; 
+  color: rgb(55, 189, 189); 
+}
+
+.action-icon4 {
+  justify-content: space-between;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  position: absolute;
+  left: 30px;  
+  color: rgb(72, 111, 112);
+}
+
+/* Give some space between the icons */
+.card-actions .action-icon + .action-icon {
+  margin-left: 10px; /* Adjust the space between icons as needed */
+}
+
